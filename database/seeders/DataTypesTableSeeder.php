@@ -1,6 +1,6 @@
 <?php
 
-namespace Joy\VoyagerBreadReplaceKeyword\Database\Seeders;
+namespace Joy\VoyagerBreadPdfTemplate\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use TCG\Voyager\Models\DataType;
@@ -12,16 +12,16 @@ class DataTypesTableSeeder extends Seeder
      */
     public function run()
     {
-        $dataType = $this->dataType('slug', 'replace-keywords');
+        $dataType = $this->dataType('slug', 'pdf-templates');
         if (!$dataType->exists) {
             $dataType->fill([
-                'name'                  => 'replace_keywords',
-                'display_name_singular' => __('joy-voyager-bread-replace-keyword::seeders.data_types.replace_keyword.singular'),
-                'display_name_plural'   => __('joy-voyager-bread-replace-keyword::seeders.data_types.replace_keyword.plural'),
+                'name'                  => 'pdf_templates',
+                'display_name_singular' => __('joy-voyager-bread-pdf-template::seeders.data_types.pdf_template.singular'),
+                'display_name_plural'   => __('joy-voyager-bread-pdf-template::seeders.data_types.pdf_template.plural'),
                 'icon'                  => 'voyager-bread',
-                'model_name'            => 'Joy\\VoyagerBreadReplaceKeyword\\Models\\ReplaceKeyword',
-                // 'policy_name'           => 'Joy\\VoyagerBreadReplaceKeyword\\Policies\\ReplaceKeywordPolicy',
-                // 'controller'            => 'Joy\\VoyagerBreadReplaceKeyword\\Http\\Controllers\\VoyagerBreadReplaceKeywordController',
+                'model_name'            => 'Joy\\VoyagerBreadPdfTemplate\\Models\\PdfTemplate',
+                // 'policy_name'           => 'Joy\\VoyagerBreadPdfTemplate\\Policies\\PdfTemplatePolicy',
+                // 'controller'            => 'Joy\\VoyagerBreadPdfTemplate\\Http\\Controllers\\VoyagerBreadPdfTemplateController',
                 'generate_permissions'  => 1,
                 'description'           => '',
             ])->save();

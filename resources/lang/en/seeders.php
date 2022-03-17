@@ -13,16 +13,16 @@ return [
         'updated_at'  => 'Updated at',
     ],
     'data_types' => [
-        'replace_keyword' => [
-            'singular' => 'ReplaceKeyword',
-            'plural'   => 'ReplaceKeywords',
+        'pdf_template' => [
+            'singular' => 'PdfTemplate',
+            'plural'   => 'PdfTemplates',
         ],
     ],
     'menu_items' => [
-        'replace_keywords' => 'ReplaceKeywords',
+        'pdf_templates' => 'PdfTemplates',
     ],
     'settings' => [
-        'replace_keyword' => [
+        'pdf_template' => [
             'key1'  => 'value1',
             'image' => 'Image',
         ],
