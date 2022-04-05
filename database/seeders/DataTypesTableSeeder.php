@@ -18,7 +18,7 @@ class DataTypesTableSeeder extends Seeder
                 'name'                  => 'pdf_templates',
                 'display_name_singular' => __('joy-voyager-bread-pdf-template::seeders.data_types.pdf_template.singular'),
                 'display_name_plural'   => __('joy-voyager-bread-pdf-template::seeders.data_types.pdf_template.plural'),
-                'icon'                  => 'voyager-bread',
+                'icon'                  => 'voyager-bread voyager-bread-pdf-template voyager-markdown',
                 'model_name'            => 'Joy\\VoyagerBreadPdfTemplate\\Models\\PdfTemplate',
                 // 'policy_name'           => 'Joy\\VoyagerBreadPdfTemplate\\Policies\\PdfTemplatePolicy',
                 // 'controller'            => 'Joy\\VoyagerBreadPdfTemplate\\Http\\Controllers\\VoyagerBreadPdfTemplateController',

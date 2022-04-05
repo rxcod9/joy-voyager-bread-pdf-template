@@ -28,7 +28,7 @@ class MenuItemsTableSeeder extends Seeder
         if (!$menuItem->exists) {
             $menuItem->fill([
                 'target'     => '_self',
-                'icon_class' => 'voyager-bread voyager-bread-pdf-template',
+                'icon_class' => 'voyager-bread voyager-bread-pdf-template voyager-markdown',
                 'color'      => null,
                 'parent_id'  => $parentMenuId,
                 'order'      => ++$maxOrder,
