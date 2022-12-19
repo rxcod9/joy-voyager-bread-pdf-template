@@ -12,7 +12,7 @@ class SettingsTableSeeder extends Seeder
      */
     public function run()
     {
-        $setting = $this->findSetting('pdf_template.key1');
+        $setting = $this->findSetting('pdftemplate.key1');
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => __('joy-voyager-bread-pdf-template::seeders.settings.pdf_template.key1'),
@@ -24,7 +24,7 @@ class SettingsTableSeeder extends Seeder
             ])->save();
         }
 
-        $setting = $this->findSetting('pdf_template.image');
+        $setting = $this->findSetting('pdftemplate.image');
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => __('joy-voyager-bread-pdf-template::seeders.settings.pdf_template.image'),
